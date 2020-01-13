@@ -1,8 +1,8 @@
 # Latest as of 03/03/2019.
 FROM karlkfi/concourse-dcind@sha256:e2bf5500e19804f42f0627076083ded9c41d1eca3486b8c7150a0ddde8ee274f
 
-ARG GOLANG_VERSION=1.12
-ARG CHECKSUM=09c43d3336743866f2985f566db0520b36f4992aea2b4b2fd9f52f17049e88f2
+ARG GOLANG_VERSION=1.13.6
+ARG CHECKSUM=aae5be954bdc40bcf8006eb77e8d8a5dde412722bc8effcdaf9772620d06420c
 
 RUN apk add -q --no-progress --no-cache --virtual .build-deps gcc musl-dev openssl go && \
 	export GOROOT_BOOTSTRAP=$(go env GOROOT) && \
