@@ -1,5 +1,5 @@
-# Latest as of 03/03/2019.
-FROM karlkfi/concourse-dcind@sha256:e2bf5500e19804f42f0627076083ded9c41d1eca3486b8c7150a0ddde8ee274f
+# Latest as of 20/05/2020.
+FROM karlkfi/concourse-dcind@sha256:5a0703e28ceb901cc96d1ef5680d62ebb6cef6f5a907768dd34bc83fcccd5182
 
 ARG GOLANG_VERSION=1.14
 ARG CHECKSUM=6d643e46ad565058c7a39dac01144172ef9bd476521f42148be59249e4b74389
@@ -16,4 +16,4 @@ RUN apk add -q --no-progress --no-cache --virtual .build-deps gcc musl-dev opens
 	/usr/local/go/bin/go version
 
 ENV GOPATH=/go \
-    PATH=/go/bin:/usr/local/go/bin:$PATH
+	PATH=/go/bin:/usr/local/go/bin:$PATH
