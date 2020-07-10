@@ -1,7 +1,7 @@
 # Latest as of 20/05/2020.
 FROM karlkfi/concourse-dcind@sha256:5a0703e28ceb901cc96d1ef5680d62ebb6cef6f5a907768dd34bc83fcccd5182
 
-ARG GOLANG_VERSION=1.14
+ARG GOLANG_VERSION=1.14.4
 ARG CHECKSUM=6d643e46ad565058c7a39dac01144172ef9bd476521f42148be59249e4b74389
 
 RUN apk add -q --no-progress --no-cache --virtual .build-deps gcc musl-dev openssl go && \
