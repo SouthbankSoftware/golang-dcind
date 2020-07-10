@@ -2,7 +2,7 @@
 FROM karlkfi/concourse-dcind@sha256:5a0703e28ceb901cc96d1ef5680d62ebb6cef6f5a907768dd34bc83fcccd5182
 
 ARG GOLANG_VERSION=1.14.4
-ARG CHECKSUM=6d643e46ad565058c7a39dac01144172ef9bd476521f42148be59249e4b74389
+ARG CHECKSUM=7011af3bbc2ac108d1b82ea8abb87b2e63f78844f0259be20cde4d42c5c40584
 
 RUN apk add -q --no-progress --no-cache --virtual .build-deps gcc musl-dev openssl go && \
 	export GOROOT_BOOTSTRAP=$(go env GOROOT) && \

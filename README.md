@@ -1,3 +1,3 @@
-# Golang Docker in Docker.
+# Golang Docker in Docker
 
-Extends docker in docker with golang in the base image.
+Extends docker in docker with golang in the base image
